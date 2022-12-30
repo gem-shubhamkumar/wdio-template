@@ -1,7 +1,7 @@
 {
-  "name": "wdio-template",
+  "name": "test-gem",
   "version": "1.0.0",
-  "description": "webdriver io template for automation",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "wdio run ./wdio.conf.ts"
