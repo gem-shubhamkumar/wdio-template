@@ -18,5 +18,8 @@ class Locators {
         return $(".title");
     }
 
+    public get search_google(): Promise<WebdriverIO.Element> {
+        return $("[name='q']");
+    }
 }
 export default new Locators();

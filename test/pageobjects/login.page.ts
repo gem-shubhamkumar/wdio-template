@@ -6,11 +6,11 @@ class LoginPage {
     public async launchApplication () {
         await action.open();
         await action.maximizeWindow();
-        await action.setImplicitTimeout(10);
+        await action.setImplicitTimeout(20);
     }
 
     public async login (username: string, password: string) {
-        await action.typeText(locator.input_username, username, "username");
+        await action.typeText(locator.input_username, username);
         await action.typeText(locator.input_password, password, "password");
         await action.clickOn(locator.button_login, "login");
     }
